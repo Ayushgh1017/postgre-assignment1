@@ -9,5 +9,7 @@ CREATE TABLE member (
   gender VARCHAR(10),
   phone bigint,
   FOREIGN KEY (membertypeid) REFERENCES membertype (id),
+  FOREIGN KEY (teamid) REFERENCES team (teamid)
   FOREIGN KEY (coachid) REFERENCES member (memberid)
+
 );

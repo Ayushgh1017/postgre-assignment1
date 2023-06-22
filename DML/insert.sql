@@ -8,7 +8,7 @@ INSERT INTO member (memberid, firstname, lastname, membertypeid, joindate, coach
 VALUES (101, 'John', 'Doe', 1, '2022-01-01', NULL, 1, 'Male',89012345),
        (102, 'Jane', 'Smith', 2, '2022-02-01', NULL, 2, 'Female',8901234),
        (103, 'Mike', 'Johnson', 1, '2022-03-01', 101, 1, 'Male',12342323),
-       (104, 'Emily', 'Brown', 3, '2022-04-01', NULL, 3, 'Female',12121212),
+       (104, 'Emily', 'Brown', 3, '2022-04-01', NULL, 2, 'Female',12121212),
        (105, 'David', 'Wilson', 2, '2022-05-01', 102, 2, 'Male',5434343434),
        (106, 'Emma', 'Davis', 1, '2022-06-01', 101, 1, 'Female',223243454);
 INSERT INTO member
@@ -28,8 +28,7 @@ VALUES (101, 1, 2022),
 
 INSERT INTO membertype (id, type, fee)
 VALUES (1, 'Basic', 100),
-       (2, 'Premium', 200),
-       (3, 'Premium', 300);
+       (2, 'Premium', 200)
 
 
 INSERT INTO tournament (tourid, name, tour_type, country, is_open)
